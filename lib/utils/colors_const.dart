@@ -6,6 +6,7 @@ class ColorsConst {
   static const colorBlue = Color(0xAF1657FF);
   static const colorLightBlue = Colors.lightBlue;
   static const colorWhite38 = Colors.white38;
+  static const colorWhite54 = Colors.white54;
   static const colorWhite = Colors.white;
   static const colorWhiteCircle = Colors.white70;
   static const colorBlack = Colors.black;

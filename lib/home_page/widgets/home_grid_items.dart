@@ -12,7 +12,8 @@ class HomeGridItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return GridView.count(
       childAspectRatio: 0.78,
-      physics: const NeverScrollableScrollPhysics(),
+      physics: const ScrollPhysics(),
+      //physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 2,
       shrinkWrap: true,
       children: [

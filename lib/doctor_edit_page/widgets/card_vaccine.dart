@@ -1,6 +1,8 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:medical_app/utils/colors_const.dart';
+import 'package:medical_app/utils/i18n.dart';
 
 class CardVaccine extends StatelessWidget {
   const CardVaccine({Key? key}) : super(key: key);
@@ -13,31 +15,31 @@ class CardVaccine extends StatelessWidget {
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Colors.lightBlue,
+        color: ColorsConst.colorLightBlue,
       ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: const [
+          children: [
             Text(
-              'VACCINE',
-              style: TextStyle(color: Colors.white54),
+              'VACCINE'.i18n,
+              style: const TextStyle(color: ColorsConst.colorWhite54),
             ),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
             Text(
-              'DT(-GENERIC-) ST.112',
-              style: TextStyle(
-                color: Colors.white,
+              'DT(-GENERIC-) ST.112'.i18n,
+              style: const TextStyle(
+                color: ColorsConst.colorWhite,
                 fontSize: 17,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            SizedBox(height: 15),
+            const SizedBox(height: 15),
             Text(
-              'Diphtheria',
-              style: TextStyle(
-                color: Colors.white,
+              'Diphtheria'.i18n,
+              style: const TextStyle(
+                color: ColorsConst.colorWhite,
                 fontSize: 15,
                 fontWeight: FontWeight.bold,
               ),

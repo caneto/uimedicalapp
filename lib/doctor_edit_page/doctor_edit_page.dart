@@ -65,9 +65,9 @@ class DoctorEditPage extends StatelessWidget {
                       ),
                       child: Row(
                         children: [
-                          const Text(
-                            'Edit',
-                            style: TextStyle(
+                          Text(
+                            'Edit'.i18n,
+                            style: const TextStyle(
                                 fontSize: 14,
                                 color: ColorsConst.colorLightBlue,
                                 fontWeight: FontWeight.bold),
@@ -124,11 +124,10 @@ class DoctorEditPage extends StatelessWidget {
                                                 fontWeight: FontWeight.bold),
                                           ),
                                           const SizedBox(height: 10),
-                                          const Text(
-                                            'Theropist,virologist',
-                                            style: TextStyle(
-                                                color: Colors.grey,
-                                                fontSize: 14),
+                                          Text(
+                                            'Theropist,virologist'.i18n,
+                                            style: const TextStyle(
+                                                color: ColorsConst.colorGray,                                                fontSize: 14),
                                           ),
                                         ],
                                       ),
@@ -140,22 +139,22 @@ class DoctorEditPage extends StatelessWidget {
                                 padding:
                                     const EdgeInsets.symmetric(vertical: 5),
                                 child: Row(
-                                  children: const [
-                                    Icon(
+                                  children: [
+                                    const Icon(
                                       Icons.calendar_today,
-                                      color: Colors.lightBlue,
+                                      color: ColorsConst.colorLightBlue,
                                       size: 14,
                                     ),
-                                    SizedBox(width: 10),
-                                    Text('September 22,2022'),
-                                    SizedBox(width: 15),
-                                    Icon(
+                                    const SizedBox(width: 10),
+                                    Text('September 22,2022'.i18n),
+                                    const SizedBox(width: 15),
+                                    const Icon(
                                       Icons.access_time_sharp,
-                                      color: Colors.blue,
+                                      color: ColorsConst.colorBlue,
                                       size: 14,
                                     ),
-                                    SizedBox(width: 10),
-                                    Text('9:30'),
+                                    const SizedBox(width: 10),
+                                    const Text('9:30'),
                                   ],
                                 ),
                               ),

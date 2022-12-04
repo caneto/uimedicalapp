@@ -70,7 +70,31 @@ extension Localization on String {
       } +
       {
         "en_us": "Doctor",
-        "pt_br": "Doutor",
+        "pt_br": "Doutor(a)",
+      } +
+      {
+        "en_us": "Theropist,virologist",
+        "pt_br": "Terapeuta, virologista",
+      } +
+      {
+        "en_us": "September 22,2022",
+        "pt_br": "22 de setembro de 2022",
+      } +
+      {
+        "en_us": "Edit",
+        "pt_br": "Editar",
+      } +
+      {
+        "en_us": "VACCINE",
+        "pt_br": "VACINA",
+      }+
+      {
+        "en_us": "DT(-GENERIC-) ST.112",
+        "pt_br": "DT(-GENÉRICO-) ST.112",
+      }+
+      {
+        "en_us": "Diphtheria",
+        "pt_br": "Difteria",
       };
 
   String get i18n => localize(this, _t);

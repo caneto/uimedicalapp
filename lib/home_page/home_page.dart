@@ -12,48 +12,48 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: ColorsConst.backgroundColor,
-      body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              SizedBox(
-                height: 120,
-                width: double.infinity,
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 15, vertical: 20),
-                      child: Text(
-                        'You have 12 \nappointments today'.i18n,
-                        style: const TextStyle(
-                            color: ColorsConst.colorWhite,
-                            fontSize: 30,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                    const Spacer(),
-                    const Padding(
-                      padding: EdgeInsets.only(right: 15, bottom: 60),
-                      child: InkWell(
-                        child: Icon(
-                          Icons.more_vert,
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: ColorsConst.backgroundColor,
+        body: Column(
+          children: [
+            SizedBox(
+              height: 120,
+              width: double.infinity,
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 15, vertical: 20),
+                    child: Text(
+                      'You have 12 \nappointments today'.i18n,
+                      style: const TextStyle(
                           color: ColorsConst.colorWhite,
-                        ),
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const Spacer(),
+                  const Padding(
+                    padding: EdgeInsets.only(right: 15, bottom: 60),
+                    child: InkWell(
+                      child: Icon(
+                        Icons.more_vert,
+                        color: ColorsConst.colorWhite,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-              HomeAppBar(),
-              const HomeGridItems(),
-            ],
-          ),
+            ),
+            HomeAppBar(),
+            const Expanded(
+              child: HomeGridItems(),
+            ),
+          ],
         ),
+        bottomNavigationBar: const HomeBottomNavBar(),
       ),
-      bottomNavigationBar: const HomeBottomNavBar(),
     );
   }
 }
