@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/doctor_edit_page/widgets/botton_patient.dart';
 import 'package:medical_app/doctor_edit_page/widgets/card_vaccine.dart';
+import 'package:medical_app/utils/colors_const.dart';
+import 'package:medical_app/utils/i18n.dart';
 
 class DoctorEditPage extends StatelessWidget {
   const DoctorEditPage({Key? key}) : super(key: key);
@@ -10,7 +12,7 @@ class DoctorEditPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xAB7E8EFA),
+      backgroundColor: ColorsConst.backgroundColor,
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -19,20 +21,20 @@ class DoctorEditPage extends StatelessWidget {
                 height: 120,
                 width: double.infinity,
                 child: Row(
-                  children: const [
+                  children: [
                     Padding(
                       padding:
-                          EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+                          const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
                       child: Text(
-                        'You have 12 \nappointments \ntoday',
-                        style: TextStyle(
+                        'You have 12 \nappointments today'.i18n,
+                        style: const TextStyle(
                             color: Colors.white,
-                            fontSize: 35,
+                            fontSize: 33,
                             fontWeight: FontWeight.bold),
                       ),
                     ),
-                    Spacer(),
-                    Padding(
+                    const Spacer(),
+                    const Padding(
                       padding: EdgeInsets.only(right: 15, bottom: 60),
                       child: InkWell(
                         child: Icon(
@@ -52,7 +54,7 @@ class DoctorEditPage extends StatelessWidget {
                       topLeft: Radius.circular(35),
                       topRight: Radius.circular(35),
                     ),
-                    color: Colors.white),
+                    color: ColorsConst.colorWhite),
                 child: Column(
                   children: [
                     Padding(
@@ -66,13 +68,13 @@ class DoctorEditPage extends StatelessWidget {
                             'Edit',
                             style: TextStyle(
                                 fontSize: 14,
-                                color: Colors.lightBlue,
+                                color: ColorsConst.colorLightBlue,
                                 fontWeight: FontWeight.bold),
                           ),
                           const Spacer(),
                           InkWell(
                             onTap: () {
-                              Navigator.pop(context);
+                              Navigator.pushNamed(context, 'homePage');
                             },
                             child: const Icon(
                               Icons.close,
@@ -92,9 +94,9 @@ class DoctorEditPage extends StatelessWidget {
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              const Text(
-                                'Doctor',
-                                style: TextStyle(
+                               Text(
+                                'Doctor'.i18n,
+                                style: const TextStyle(
                                     fontSize: 19, fontWeight: FontWeight.bold),
                               ),
                               Padding(
@@ -113,15 +115,15 @@ class DoctorEditPage extends StatelessWidget {
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 10, vertical: 10),
                                       child: Column(
-                                        children: const [
+                                        children: [
                                           Text(
-                                            'Dr.Hanna Fiegel',
-                                            style: TextStyle(
+                                            'Dr.Hanna Fiegel'.i18n,
+                                            style: const TextStyle(
                                                 fontSize: 19,
                                                 fontWeight: FontWeight.bold),
                                           ),
-                                          SizedBox(height: 10),
-                                          Text(
+                                          const SizedBox(height: 10),
+                                          const Text(
                                             'Theropist,virologist',
                                             style: TextStyle(
                                                 color: Colors.grey,

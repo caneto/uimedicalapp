@@ -4,9 +4,9 @@ import 'package:medical_app/doctor_edit_page/doctor_edit_page.dart';
 import 'package:medical_app/drdoctor_page/drdoctor_page.dart';
 import 'package:medical_app/home_page/home_page.dart';
 import 'package:medical_app/login_page.dart';
+import 'package:medical_app/utils/colors_const.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:i18n_extension/i18n_widget.dart';
-import 'package:medical_app/utils/colors_const.dart';
 
 void main() {
   runApp(const MyApp());

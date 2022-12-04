@@ -1,8 +1,8 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
-import 'package:medical_app/Home_Page/Home_Page.dart';
 import 'package:medical_app/utils/colors_const.dart';
+import 'package:medical_app/utils/i18n.dart';
 
 class HomeGridItems extends StatelessWidget {
   const HomeGridItems({Key? key}) : super(key: key);

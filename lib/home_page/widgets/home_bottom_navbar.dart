@@ -28,7 +28,7 @@ class HomeBottomNavBar extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, 'HomePage');
+                Navigator.pushNamed(context, 'homePage');
               },
               child: Container(
                 height: 40,
@@ -77,7 +77,7 @@ class HomeBottomNavBar extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, 'CalendarPage');
+                Navigator.pushNamed(context, 'calendarPage');
               },
               child: Padding(
                 padding: const EdgeInsets.only(right: 15),
