@@ -1,6 +1,8 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:medical_app/Home_Page/Home_Page.dart';
+import 'package:medical_app/utils/colors_const.dart';
 
 class HomeGridItems extends StatelessWidget {
   const HomeGridItems({Key? key}) : super(key: key);
@@ -16,39 +18,39 @@ class HomeGridItems extends StatelessWidget {
         //   for (int i = 1; i < 5; i++)
         InkWell(
           onTap: () {
-            Navigator.pushNamed(context, 'DoctorEditPage');
+            Navigator.pushNamed(context, 'doctorEditPage');
           },
           child: Container(
             padding: const EdgeInsets.all(10),
             margin: const EdgeInsets.only(left: 5, right: 5, bottom: 5, top: 5),
             decoration: BoxDecoration(
-              color: Colors.lightBlue,
+              color: ColorsConst.colorLightBlue,
               borderRadius: BorderRadius.circular(20),
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
+              children: [
                 Text(
-                  'VACCINE \nDT(GENERIC)',
-                  style: TextStyle(
-                      color: Colors.white,
+                  'VACCINE \nDT(GENERIC)'.i18n,
+                  style: const TextStyle(
+                      color: ColorsConst.colorWhite,
                       fontSize: 16,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10),
-                Text(
+                const SizedBox(height: 10),
+                const Text(
                   '9:30',
                   style: TextStyle(
-                      color: Colors.white,
+                      color: ColorsConst.colorWhite,
                       fontSize: 33,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
-                  'Dr.Hanna Fiegel',
-                  style: TextStyle(
-                      color: Colors.white,
+                  'Dr.Hanna Fiegel'.i18n,
+                  style: const TextStyle(
+                      color: ColorsConst.colorWhite,
                       fontSize: 14,
                       fontWeight: FontWeight.bold),
                 ),
@@ -60,33 +62,33 @@ class HomeGridItems extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           margin: const EdgeInsets.only(left: 5, right: 5, bottom: 5, top: 5),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: ColorsConst.colorWhite,
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
-                'VACCINE \nTDAP(ADACEL)',
-                style: TextStyle(
-                    color: Colors.black,
+                'VACCINE \nTDAP(ADACEL)'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorBlack,
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 '11:40',
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: ColorsConst.colorGray,
                     fontSize: 33,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
-                'Dr.Orane',
-                style: TextStyle(
-                    color: Colors.grey,
+                'Dr.Orane'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorGray,
                     fontSize: 14,
                     fontWeight: FontWeight.bold),
               ),
@@ -97,33 +99,33 @@ class HomeGridItems extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           margin: const EdgeInsets.only(left: 5, right: 5, bottom: 5, top: 5),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: ColorsConst.colorWhite,
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
-                'VACCINE \nPSV23(PNEUMO)',
-                style: TextStyle(
-                    color: Colors.black,
+                'VACCINE \nPSV23(PNEUMO)'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorBlack,
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 '12:15',
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: ColorsConst.colorGray,
                     fontSize: 33,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
-                'Dr.Smith',
-                style: TextStyle(
-                    color: Colors.grey,
+                'Dr.Smith'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorGray,
                     fontSize: 14,
                     fontWeight: FontWeight.bold),
               ),
@@ -134,33 +136,107 @@ class HomeGridItems extends StatelessWidget {
           padding: const EdgeInsets.all(10),
           margin: const EdgeInsets.only(left: 5, right: 5, bottom: 5, top: 5),
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: ColorsConst.colorWhite,
             borderRadius: BorderRadius.circular(20),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               Text(
-                'VACCINE \nRV1(ROTARIX)',
-                style: TextStyle(
-                    color: Colors.black,
+                'VACCINE \nRV1(ROTARIX)'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorBlack,
                     fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 '12:45',
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: ColorsConst.colorGray,
                     fontSize: 33,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
               Text(
-                'Dr.Tempsni',
+                'Dr.Tempsni'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorGray,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.all(10),
+          margin: const EdgeInsets.only(left: 5, right: 5, bottom: 5, top: 5),
+          decoration: BoxDecoration(
+            color: ColorsConst.colorWhite,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'VACCINE \nHPV'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorBlack,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                '12:15',
                 style: TextStyle(
-                    color: Colors.grey,
+                    color: ColorsConst.colorGray,
+                    fontSize: 33,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'Dr.Smith'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorGray,
+                    fontSize: 14,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
+          ),
+        ),
+        Container(
+          padding: const EdgeInsets.all(10),
+          margin: const EdgeInsets.only(left: 5, right: 5, bottom: 5, top: 5),
+          decoration: BoxDecoration(
+            color: ColorsConst.colorWhite,
+            borderRadius: BorderRadius.circular(20),
+          ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'VACCINE \nCOVID 19 (Pfizer)'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorBlack,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 10),
+              const Text(
+                '12:45',
+                style: TextStyle(
+                    color: ColorsConst.colorGray,
+                    fontSize: 33,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(height: 10),
+              Text(
+                'Dr.Tempsni'.i18n,
+                style: const TextStyle(
+                    color: ColorsConst.colorGray,
                     fontSize: 14,
                     fontWeight: FontWeight.bold),
               ),

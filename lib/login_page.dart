@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:i18n_extension/i18n_extension.dart';
 import 'package:medical_app/utils/colors_const.dart';
@@ -29,7 +30,6 @@ extension Localization on String {
 
 class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
-
   
   @override
   Widget build(BuildContext context) {
@@ -57,12 +57,12 @@ class LoginPage extends StatelessWidget {
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   labelText: 'Email Address'.i18n,
-                  labelStyle: const TextStyle(color: Colors.white),
+                  labelStyle: const TextStyle(color: ColorsConst.colorWhite),
                   icon: const Padding(
                     padding: EdgeInsets.only(top: 15),
                     child: Icon(
                       Icons.alternate_email_sharp,
-                      color: Colors.white,
+                      color: ColorsConst.colorWhite,
                     ),
                   ),
                 ),
@@ -75,7 +75,7 @@ class LoginPage extends StatelessWidget {
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
                   labelText: 'Password'.i18n,
-                  labelStyle: const TextStyle(color: Colors.white),
+                  labelStyle: const TextStyle(color: ColorsConst.colorWhite),
                   icon: const Padding(
                     padding: EdgeInsets.only(top: 15),
                     child: Icon(
@@ -97,12 +97,12 @@ class LoginPage extends StatelessWidget {
                     const EdgeInsets.symmetric(horizontal: 65, vertical: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: ColorsConst.color_blue,
+                  color: ColorsConst.colorBlue,
                   boxShadow: const [
                     BoxShadow(
                       blurRadius: 2,
                       spreadRadius: 4,
-                      color: Colors.white,
+                      color: ColorsConst.colorWhite,
                     ),
                   ],
                 ),
@@ -110,7 +110,7 @@ class LoginPage extends StatelessWidget {
                   child: Text(
                     'Sign Up'.i18n,
                     style: const TextStyle(
-                        color: Colors.white,
+                        color: ColorsConst.colorWhite,
                         fontSize: 18,
                         fontWeight: FontWeight.bold),
                   ),
@@ -124,12 +124,12 @@ class LoginPage extends StatelessWidget {
                 children: [
                   Text(
                     "Don't have an account?".i18n,
-                    style: const TextStyle(fontSize: 15, color: Colors.white),
+                    style: const TextStyle(fontSize: 15, color: ColorsConst.colorWhite),
                   ),
                   const SizedBox(width: 10),
                   Text(
                     'Register Now'.i18n,
-                    style: const TextStyle(fontSize: 15, color: Colors.white),
+                    style: const TextStyle(fontSize: 15, color: ColorsConst.colorWhite),
                   )
                 ],
               ),
@@ -137,7 +137,7 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 50),
             Text(
               'Choose your operating system'.i18n,
-              style: const TextStyle(color: Colors.white),
+              style: const TextStyle(color: ColorsConst.colorWhite),
             ),
             const SizedBox(height: 10),
             Row(

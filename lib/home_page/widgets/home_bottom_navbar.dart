@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:medical_app/utils/colors_const.dart';
 
 class HomeBottomNavBar extends StatelessWidget {
   const HomeBottomNavBar({Key? key}) : super(key: key);
@@ -15,10 +16,10 @@ class HomeBottomNavBar extends StatelessWidget {
           BoxShadow(
             blurRadius: 1,
             spreadRadius: 5,
-            color: Colors.white38,
+            color: ColorsConst.colorWhite38,
           ),
         ],
-        color: Colors.lightBlue,
+        color: ColorsConst.colorLightBlue,
       ),
       child: Padding(
         padding: const EdgeInsets.only(left: 15),
@@ -38,13 +39,13 @@ class HomeBottomNavBar extends StatelessWidget {
                       BoxShadow(
                         blurRadius: 1,
                         spreadRadius: 5,
-                        color: Colors.white,
+                        color: ColorsConst.colorWhite,
                       ),
                     ],
-                    color: Colors.lightBlue),
+                    color: ColorsConst.colorLightBlue),
                 child: const Icon(
                   Icons.home,
-                  color: Colors.white,
+                  color: ColorsConst.colorWhite,
                 ),
               ),
             ),
@@ -63,13 +64,13 @@ class HomeBottomNavBar extends StatelessWidget {
                         BoxShadow(
                           blurRadius: 1,
                           spreadRadius: 5,
-                          color: Colors.white,
+                          color: ColorsConst.colorWhite,
                         ),
                       ],
-                      color: Colors.lightBlue),
+                      color: ColorsConst.colorLightBlue),
                   child: const Icon(
                     Icons.people_outline,
-                    color: Colors.white,
+                    color: ColorsConst.colorWhite,
                   ),
                 ),
               ),
@@ -89,13 +90,13 @@ class HomeBottomNavBar extends StatelessWidget {
                         BoxShadow(
                           blurRadius: 1,
                           spreadRadius: 5,
-                          color: Colors.white,
+                          color: ColorsConst.colorWhite,
                         ),
                       ],
-                      color: Colors.lightBlue),
+                      color: ColorsConst.colorLightBlue),
                   child: const Icon(
                     Icons.domain_verification,
-                    color: Colors.white,
+                    color: ColorsConst.colorWhite,
                   ),
                 ),
               ),
