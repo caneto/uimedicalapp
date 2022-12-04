@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:medical_app/doctor_edit_page/widgets/botton_patient.dart';
 import 'package:medical_app/doctor_edit_page/widgets/card_vaccine.dart';
+import 'package:medical_app/utils/extensions/context_extension.dart';
 import 'package:medical_app/utils/colors_const.dart';
 import 'package:medical_app/utils/i18n.dart';
 
@@ -74,7 +75,7 @@ class DoctorEditPage extends StatelessWidget {
                           const Spacer(),
                           InkWell(
                             onTap: () {
-                              Navigator.pushNamed(context, 'homePage');
+                              context.pushNamed('homePage');
                             },
                             child: const Icon(
                               Icons.close,

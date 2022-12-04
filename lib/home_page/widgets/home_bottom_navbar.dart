@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:medical_app/utils/colors_const.dart';
+import 'package:medical_app/utils/extensions/context_extension.dart';
+
 
 class HomeBottomNavBar extends StatelessWidget {
   const HomeBottomNavBar({Key? key}) : super(key: key);
@@ -28,7 +30,7 @@ class HomeBottomNavBar extends StatelessWidget {
           children: [
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, 'homePage');
+                context.pushNamed('homePage');
               },
               child: Container(
                 height: 40,

@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:medical_app/utils/extensions/context_extension.dart';
 import 'package:medical_app/utils/colors_const.dart';
 import 'package:medical_app/utils/i18n.dart';
 
@@ -18,7 +19,7 @@ class HomeGridItems extends StatelessWidget {
         //   for (int i = 1; i < 5; i++)
         InkWell(
           onTap: () {
-            Navigator.pushNamed(context, 'doctorEditPage');
+            context.pushNamed('doctorEditPage');
           },
           child: Container(
             padding: const EdgeInsets.all(10),
