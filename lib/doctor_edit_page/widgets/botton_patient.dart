@@ -9,7 +9,7 @@ class BottonPatient extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, 'DrDoctorPage');
+        Navigator.pushNamed(context, 'drdoctorPage');
       },
       child: Container(
         margin: const EdgeInsets.only(right: 10, left: 10),

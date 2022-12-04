@@ -8,7 +8,7 @@ class HomeBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 45,
+      height: 60,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(0),
         boxShadow: const [
@@ -50,7 +50,7 @@ class HomeBottomNavBar extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.popAndPushNamed(context, 'DoctorEditPage');
+                Navigator.popAndPushNamed(context, 'doctorEditPage');
               },
               child: Padding(
                 padding: const EdgeInsets.only(left: 10),
