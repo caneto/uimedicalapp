@@ -28,6 +28,31 @@
   </tr>
 </table> 
 
+<br/>
+
+<b>Fotos usando Emulador normal (em ingles)</b>
+<table> 
+  <tr>
+    <td> 
+      <img width="250" src="https://github.com/caneto/uimedicalapp/blob/main/screenshots/Screenshot_1670283400.png"/> 
+    </td>
+    <td>
+      <img width="250" src="https://github.com/caneto/uimedicalapp/blob/main/screenshots/Screenshot_1670283406.png"/> 
+    </td>
+    <td> 
+      <img width="250" src="https://github.com/caneto/uimedicalapp/blob/main/screenshots/Screenshot_1670283409.png"/> 
+    </td>
+  </tr>
+  
+  <tr>
+    <td> 
+      <img width="250" src="https://github.com/caneto/uimedicalapp/blob/main/screenshots/Screenshot_1670283413.png"/> 
+    </td>
+    <td>
+      <img width="250" src="https://github.com/caneto/uimedicalapp/blob/main/screenshots/Screenshot_1670283430.png"/> 
+    </td>
+  </tr>
+</table> 
 
 ## Tecnologia usada
 <b>Componentes </b>date_picker_timeline, i18n_extension.<br>
