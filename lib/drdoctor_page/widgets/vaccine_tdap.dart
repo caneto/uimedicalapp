@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:medical_app/utils/i18n.dart';
 
 class VaccineTDAP extends StatelessWidget {
   const VaccineTDAP({Key? key}) : super(key: key);
@@ -24,12 +25,12 @@ class VaccineTDAP extends StatelessWidget {
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
-                    '  VACCINE',
-                    style: TextStyle(color: Colors.white54, fontSize: 13),
+                    'VACCINE'.i18n,
+                    style: const TextStyle(color: Colors.white54, fontSize: 13),
                   ),
-                  InkWell(
+                  const InkWell(
                     child: Icon(
                       Icons.playlist_add_check_circle_sharp,
                       color: Colors.white,
@@ -75,14 +76,14 @@ class VaccineTDAP extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
+                children: [
                   Text(
-                    'Third time in clinic',
-                    style: TextStyle(color: Colors.white54),
+                    'Third time in clinic'.i18n,
+                    style: const TextStyle(color: Colors.white54),
                   ),
                   Text(
-                    'Septembar 22',
-                    style: TextStyle(color: Colors.white54),
+                    'Septembar 22'.i18n,
+                    style: const TextStyle(color: Colors.white54),
                   ),
                 ],
               ),

@@ -1,6 +1,7 @@
 // ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
+import 'package:medical_app/utils/i18n.dart';
 
 class CalendarCard3 extends StatelessWidget {
   const CalendarCard3({Key? key}) : super(key: key);
@@ -33,18 +34,18 @@ class CalendarCard3 extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text(
+                      children: [
+                        const Text(
                           'Clear Nieda',
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 19,
                               fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(height: 5),
+                        const SizedBox(height: 5),
                         Text(
-                          'Dr.Hanna',
-                          style: TextStyle(
+                          'Dr.Hanna'.i18n,
+                          style: const TextStyle(
                               fontSize: 13,
                               color: Colors.black38,
                               fontWeight: FontWeight.bold),

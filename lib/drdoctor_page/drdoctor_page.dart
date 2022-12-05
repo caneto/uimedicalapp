@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:medical_app/drdoctor_page/widgets/list_vaccine.dart';
+import 'package:medical_app/utils/i18n.dart';
 
 class DrDoctorPage extends StatelessWidget {
   const DrDoctorPage({Key? key}) : super(key: key);
@@ -64,15 +65,15 @@ class DrDoctorPage extends StatelessWidget {
                 ),
               ),
               Column(
-                children: const [
+                children: [
                   Text(
-                    'Dr.Hanna Fiegel',
-                    style: TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
+                    'Dr.Hanna Fiegel'.i18n,
+                    style: const TextStyle(fontSize: 19, fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Text(
-                    'Therapist, virologist',
-                    style: TextStyle(color: Colors.grey, fontSize: 14),
+                    'Theropist,virologist'.i18n,
+                    style: const TextStyle(color: Colors.grey, fontSize: 14),
                   ),
                 ],
               ),
@@ -85,7 +86,7 @@ class DrDoctorPage extends StatelessWidget {
                   children: [
                     GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, 'CalendarPage');
+                        Navigator.pushNamed(context, 'calendarPage');
                       },
                       child: Container(
                         height: 50,
@@ -106,12 +107,12 @@ class DrDoctorPage extends StatelessWidget {
                         ),
                       ),
                     ),
-                    const Padding(
+                    Padding(
                       padding:
-                          EdgeInsets.symmetric(horizontal: 15, vertical: 15),
+                          const EdgeInsets.symmetric(horizontal: 15, vertical: 15),
                       child: Text(
-                        'Add appointment',
-                        style: TextStyle(
+                        'Add appointment'.i18n,
+                        style: const TextStyle(
                           color: Colors.lightBlue,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,

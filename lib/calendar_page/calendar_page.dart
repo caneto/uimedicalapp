@@ -6,6 +6,7 @@ import 'package:medical_app/calendar_page/widgets/calendar_card.dart';
 import 'package:medical_app/calendar_page/widgets/calendar_card2.dart';
 import 'package:medical_app/calendar_page/widgets/calendar_card3.dart';
 import 'package:medical_app/home_page/widgets/home_bottom_navbar.dart';
+import 'package:medical_app/utils/i18n.dart';
 
 class CalendarPage extends StatelessWidget {
   const CalendarPage({Key? key}) : super(key: key);
@@ -24,9 +25,9 @@ class CalendarPage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    const Text(
-                      'Schedule',
-                      style: TextStyle(
+                    Text(
+                      'Schedule'.i18n,
+                      style: const TextStyle(
                           color: Colors.white,
                           fontSize: 20,
                           fontWeight: FontWeight.bold),
@@ -67,6 +68,8 @@ class CalendarPage extends StatelessWidget {
                         DateTime.now(),
                         selectionColor: Colors.white38,
                         selectedTextColor: Colors.white,
+                        locale: "pt_BR",
+                        initialSelectedDate: DateTime.now(),
                       ),
                     ),
                     const CalendarCard(),
