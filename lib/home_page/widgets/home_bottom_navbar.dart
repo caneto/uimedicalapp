@@ -53,7 +53,7 @@ class HomeBottomNavBar extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.popAndPushNamed(context, 'doctorEditPage');
+                context.popAndPushNamed('doctorEditPage');
               },
               child: Padding(
                 padding: const EdgeInsets.only(left: 10),
@@ -79,7 +79,7 @@ class HomeBottomNavBar extends StatelessWidget {
             ),
             GestureDetector(
               onTap: () {
-                Navigator.pushNamed(context, 'calendarPage');
+                context.pushNamed('calendarPage');
               },
               child: Padding(
                 padding: const EdgeInsets.only(right: 15),
