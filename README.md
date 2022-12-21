@@ -57,7 +57,13 @@
 ## Tecnologia usada
 <b>Componentes </b>date_picker_timeline, i18n_extension.<br>
 
+ - Flutter e flutter_localizations
 
+ - date_picker_timeline - 1.2.3
+ - i18n_extension - 6.0.0
+
+
+<b>Desenvolvido apenas para Android, e iOS.</b> - Testado exclusivamente em Android (Emulador). 
 
 <h2>📝 Licença</h2>
 
