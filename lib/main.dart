@@ -19,16 +19,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
        // ignore: prefer_const_literals_to_create_immutables
-       localizationsDelegates: [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      // ignore: prefer_const_literals_to_create_immutables
-      supportedLocales: [
-        const Locale('en', "US"),
-        const Locale('pt', "BR"),
-      ],
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        // ignore: prefer_const_literals_to_create_immutables
+        supportedLocales: [
+          const Locale('en', "US"),
+          const Locale('pt', "BR"),
+        ],
       title: 'Medical App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
